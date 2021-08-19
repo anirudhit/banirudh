@@ -1,0 +1,288 @@
+@import "variables.css";
+@import "global.css";
+body,html {
+    padding: var(--pd0);
+    margin: var(--mr0);
+    color: var(--bg2);
+    background: var(--bg1);
+}
+#ab-loading {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: var(--bg1);
+    z-index: var(--zi1);
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#ab-spinner {
+    animation: rotate 0.56s infinite linear;
+    width: var(--wh60);
+    height: var(--wh60);
+    border: var(--br6) solid var(--bg2);
+    border-bottom: var(--br6) solid var(--bg1);
+    border-radius: var(--pr50);
+    margin: var(--mr0);
+}
+@keyframes rotate {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+#ab-header {
+    width: var(--pr80);
+    padding: var(--pr4) var(--pr10);
+    position: absolute;
+    transition: 0.6s ease-in-out;
+}
+#ab-title {
+    font-size: var(--fs40);
+    background-image: linear-gradient(to left, var(--lg1-start) var(--pr0), var(--lg1-end) var(--pr100));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: var(--pr500) (--pr500) !important;
+    -webkit-animation: Gradient 20s ease infinite;
+    -moz-animation: Gradient 20s ease infinite;
+    -o-animation: Gradient 20s ease infinite;
+    animation: Gradient 20s ease infinite;
+}
+#ab-links {
+    margin: var(--mr8) var(--mr0);
+    transition: 0.6s ease-in-out;
+    color: var(--bg2);
+}
+#ab-links a {
+    margin: var(--mr0) var(--mr6);
+    color: inherit;
+    text-decoration: none;
+    transition: 0.4s ease-in-out;
+    padding: var(--pd1) var(--pi8);
+    border-bottom: var(--br2) solid transparent;
+}
+#ab-links a:hover {
+    border-bottom: var(--br2) solid var(--bg2);
+}
+#ab-middle {
+    width: var(--pr100);
+    height: 80vh;
+    background: linear-gradient(0deg,var(--lg2-start),var(--lg2-end)),url("imgs/banirudh.jpg") center center fixed;
+    background-size: var(--pr100) auto;
+    background-repeat: no-repeat;
+    color: var(--cl2);
+    justify-content: center;
+    flex-direction: column;
+    transition: 1s ease-in-out;
+    padding-top: 20vh;
+}
+#ab-tagline {
+    font-size: var(--fs50);
+    width: var(--pr60);
+}
+#ab-portfolio {
+    width: var(--pr80);
+    padding: var(--pr2) var(--pr10);
+}
+#ab-portfolio div h1 {
+    font-size: var(--fs40);
+    background-image: linear-gradient(to left, var(--lg1-start) var(--pr0), var(--lg1-end) var(--pr100));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: var(--pr500) var(--pr500) !important;
+    -webkit-animation: Gradient 20s ease infinite;
+    -moz-animation: Gradient 20s ease infinite;
+    -o-animation: Gradient 20s ease infinite;
+    animation: Gradient 20s ease infinite;
+}
+#ab-skills {
+    margin: 4vh var(--mr0) !important;
+    padding: 2vh var(--pd0) !important;
+}
+#ab-work {
+    margin: 4vh var(--mr0) !important;
+    padding: 2vh var(--pd0) !important;
+}
+#ab-contact {
+    margin: 4vh var(--mr0) !important;
+    padding: 2vh var(--pd0) !important;
+}
+#ab-contact form {
+    width: var(--pr100);
+}
+#ab-contact form input {
+    width: var(--pr46);
+    margin: var(--mr4) var(--pr1);
+    background: transparent;
+    border: var(--br0);
+    border-bottom: var(--br2) solid var(--rgba1);
+    padding: var(--pi8) var(--pd2);
+    font-size: var(--fs18);
+    transition: 0.4s ease-in-out;
+    color: var(--bg2);
+}
+#ab-contact form textarea {
+    width: var(--pr96);
+    margin: var(--mr4) var(--pr1);
+    padding: var(--pi8) var(--pd2);
+    border: var(--br0);
+    border-bottom: var(--br2) solid var(--rgba1);
+    padding: var(--pi8) var(--pd2);
+    font-size: var(--fs18);
+    background: transparent;
+    resize: none;
+    transition: 0.4s ease-in-out;
+    color: var(--bg2);
+}
+#ab-contact form input:focus {
+    outline: none;
+    border-bottom: var(--br2) solid var(--rgba2);
+}
+#ab-contact form textarea:focus {
+    outline: none;
+    border-bottom: var(--br2) solid var(--rgba2);
+}
+::placeholder {
+    color: var(--bg2);
+}
+.btn_one {
+    color: var(--bg2);
+    padding: var(--pd2) var(--pd8);
+    border-radius: var(--br50);
+    border: var(--br2) solid var(--bg2);
+    font-size: var(--fs18);
+    font-weight: bold;
+    background: transparent;
+    transition: 0.4s ease-in-out;
+    margin: var(--mr6) var(--mr2);
+}
+.btn_one:hover {
+    background: var(--bg2);
+    cursor: pointer;
+    color: var(--bg1);
+}
+.btn_two {
+    color: var(--bg1);
+    padding: var(--pd2) var(--pd8);
+    border-radius: var(--br50);
+    border: var(--br2) solid var(--bg2);
+    font-size: var(--fs18);
+    font-weight: bold;
+    background: var(--bg2);
+    transition: 0.4s ease-in-out;
+    margin: var(--mr6) var(--mr2);
+}
+.btn_two:hover {
+    background: transparent;
+    cursor: pointer;
+    color: var(--bg2);
+}
+#ab-details {
+    margin: 6vh var(--mr0);
+}
+.btn_social {
+    font-size: var(--fs18);
+    color: var(--bg2);
+    margin: var(--mr8) var(--mr4);
+    padding: var(--pd3) var(--pi18);
+    border-radius: var(--pr50);
+    background: var(--bg1);
+    transition: 0.4s ease-in-out;
+}
+.btn_social:hover {
+    color: var(--bg1);
+    background: var(--bg2);
+    cursor: pointer;
+}
+@media (max-width: var(--wh900)){
+    #ab-header {
+        width: var(--pr94);
+        padding: var(--pr15) var(--pr3);
+    }
+    #ab-title {
+        font-size: var(--fs30);
+    }
+    #ab-links {
+        margin: var(--mr6) var(--mr0);
+    }
+    #ab-links a {
+        margin: var(--mr0);
+    }
+    #ab-middle {
+        width: var(--pr100);
+        border-radius: var(--br0);
+        height: 80vh;
+        background-size: cover;
+    }
+    #ab-tagline {
+        width: var(--pr90);
+        font-size: var(--fs30);
+    }
+    .btn_one {
+        font-size: var(--fs14);
+        padding: var(--pi8) var(--pd4);
+    }
+    .btn_two {
+        font-size: var(--fs14);
+        padding: var(--pi8) var(--pd4);
+    }
+    #ab-contact form input {
+        width: var(--pr92);
+    }
+    #ab-contact form textarea {
+        width: var(--pr92);
+    }
+    .btn_social {
+        font-size: var(--fs14);
+        margin: var(--mr2);
+        padding: var(--pd2) var(--pi11);
+    }
+}
+#ab-footer {
+    width: var(--pr100);
+    padding: 10vh var(--pd0);
+}
+#ab-footer a {
+    font-size: var(--fs18);
+    background-image: linear-gradient(to left, var(--lg1-start) var(--pr0), var(--lg1-end) var(--pr100));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: var(--pr500) var(--pr500) !important;
+    -webkit-animation: Gradient 20s ease infinite;
+    -moz-animation: Gradient 20s ease infinite;
+    -o-animation: Gradient 20s ease infinite;
+    animation: Gradient 20s ease infinite;
+    text-decoration: none;
+}
+button:focus {
+    outline: none;
+}
+::-webkit-scrollbar {
+    width: var(--wh5);
+    height: var(--wh5);
+}
+::-webkit-scrollbar-track {
+    background: var(--bg3); 
+}
+::-webkit-scrollbar-thumb {
+    background: var(--bg1); 
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--bg4); 
+}
+@-webkit-keyframes Gradient {
+    0% {background-position: var(--pr0) var(--pr50)}
+    50% {background-position: var(--pr100) var(--pr50)}
+    100% {background-position: var(--pr0) var(--pr50)}
+}
+@-moz-keyframes Gradient {
+    0% {background-position: var(--pr0) var(--pr50)}
+    50% {background-position: var(--pr100) var(--pr50)}
+    100% {background-position: var(--pr0) var(--pr50)}
+}
+@keyframes Gradient {
+    0% {background-position: var(--pr0) var(--pr50)}
+    50% {background-position: var(--pr100) var(--pr50)}
+    100% {background-position: var(--pr0) var(--pr50)}
+}
