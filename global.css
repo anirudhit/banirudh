@@ -1,0 +1,19 @@
+.display-block {
+    display: block;
+}
+
+.display-flex {
+    display: flex;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.scroll-smooth {
+    scroll-behavior: smooth;
+}
+
+.text-center {
+    text-align: center;
+}
